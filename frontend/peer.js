@@ -6,7 +6,7 @@ const DEFAULT_ROOM = 'filedrop-pro-room';
 // Automatically select local signaling server for testing, or live server for production
 const SIGNAL_URL = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.DEV)
   ? `ws://${location.hostname}:8787/signal`
-  : 'wss://filedrop-signaling.abdullah21673.workers.dev/signal';
+  : 'wss://filedrop-advanced-signaling.mdshohagislam30.workers.dev/signal';
 
 function getRoomId() {
   return window.location.hash.replace('#', '').trim() || DEFAULT_ROOM;
